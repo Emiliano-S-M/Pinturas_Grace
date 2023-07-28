@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinturas Grace | Inicio</title>
+    <meta name="description" content="Descripción de tu página para SEO">
+    <meta name="keywords" content="Palabras clave, separadas por comas, para SEO">
+
+    <link rel="stylesheet" href="../css/Principal.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <img src="../css/svg/logo.svg" alt="Logo Pinturas Grace">
+            <ul class="menu">
+                <li class="inicio"><a href="#" onclick="mostrarDiv('inicio')">INICIO</a></li>
+                <li class="nosotros"><a href="#" onclick="mostrarDiv('nosotros')">NOSOTROS</a></li>
+                <li class="productos"><a href="#" onclick="mostrarDiv('productos')">PRODUCTOS</a></li>
+                <li class="colores"><a href="#" onclick="mostrarDiv('colores')">COLORES</a></li>
+                <li class="blog"><a href="#" onclick="mostrarDiv('blog')">BLOG</a></li>
+                <li class="contacto"><a href="#" onclick="mostrarDiv('contacto')">CONTACTO</a></li>
+                <li class="ubicaciones"><a href="#" onclick="mostrarDiv('ubicaciones')">UBICACIONES</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div id="inicio" class="contenido">
+                <!-- Contenido del div "inicio" aquí -->
+                <p>Inicio</p>
+            </div>
+            <div id="nosotros" class="contenido hidden" >
+                <!-- Contenido del div "nosotros" aquí -->
+                <p>Nosotros</p>
+            </div>
+            <div id="productos" class="contenido hidden">
+                <p>Productos</p>
+                <!-- Contenido del div "productos" aquí -->
+            </div>
+            <div id="colores" class="contenido hidden">
+                <!-- Contenido del div "colores" aquí -->
+                <p>Colores</p>
+            </div>
+            <div id="blog" class="contenido hidden">
+                <!-- Contenido del div "blog" aquí -->
+                <p>Blog</p>
+            </div>
+            <div id="contacto" class="contenido hidden">
+                <!-- Contenido del div "contacto" aquí-->
+                <p>Contacto</p>
+            </div>
+            <div id="ubicaciones" class="contenido hidden">
+                <!-- Contenido del div "contacto" aquí -->
+                <div class="contenido-contacto">
+                    <h2>Nuestras Ubicaciones</h2>
+                    <div class="mapa1">
+                        <p>Nuestra Empresa y Oficinas</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60135.3846962948!2d-99.2404783513672!3d19.607556200000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f72b16ba9ba5%3A0x139a50bda7aea190!2sPinturas%20Grace!5e0!3m2!1ses!2smx!4v1690390778652!5m2!1ses!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="Mapa de nuestra empresa y oficinas"></iframe>
+                    </div>
+                    <div class="mapa2">
+                        <p>Nuestra tienda</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60135.3846962948!2d-99.2404783513672!3d19.607556200000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f5be7fcf15b1%3A0x1dc7c64189de909a!2sPinturas%20Grace%20Tienda%20Tultitl%C3%A1n!5e0!3m2!1ses!2smx!4v1690394754092!5m2!1ses!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="Mapa de nuestra tienda"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/Principal.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.fondo{
+    height: 100vh;
+    width: 100%;
+    background: url(./img/mpselsvdsfvor3d.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+}
+.header{
+    opacity: 0;
+    height: 100vh;
+    width: 100%;
+    background: url(./img/mpselsvdsfvor3d.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    animation-name: desvanecer;
+    animation-duration: 9s;
+    animation-iteration-count: 1;
+}
+
+@keyframes desvanecer {
+    0%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.container{
+    background: rgba(255,255,255,0.4);
+    backdrop-filter: blur(5%);
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 0%;
+    position: absolute;
+    width: 45%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+#container {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 80pt;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    -webkit-transform: translate(-50%, 20%);
+    -moz-transform: translate(-50%, 20%);
+    -ms-transform: translate(-50%, 20%);
+    -o-transform: translate(-50%, 20%);
+}
+
+#text1, #text2 {
+	position: absolute;
+	width: 100%;
+	display: inline-block;
+	font-family: 'Raleway', sans-serif;
+	font-size: 80pt;
+	text-align: center;
+	user-select: none;
+}
