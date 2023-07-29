@@ -1,59 +1,70 @@
+/* Importar fuente de Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
 
-*{
+/* Estilo de reinicio para todos los elementos */
+* {
     margin: 0;
     padding: 0;
 }
-.fondo{
+
+/* Estilo para el fondo de la página */
+.fondo {
     height: 100vh;
     width: 100%;
+    /* Fondo con imagen centrada y ajustada al tamaño de la ventana */
     background: url(./img/mpselsvdsfvor3d.png) no-repeat center;
     background-size: cover;
     position: absolute;
 }
-.header{
+
+/* Estilo para el encabezado con animación de desvanecer */
+.header {
     opacity: 0;
     height: 100vh;
     width: 100%;
+    /* Fondo con imagen centrada y ajustada al tamaño de la ventana */
     background: url(./img/mpselsvdsfvor3d.png) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    /* Animación de desvanecer con duración de 9 segundos */
     animation-name: desvanecer;
     animation-duration: 9s;
     animation-iteration-count: 1;
 }
 
+/* Animación de desvanecer con opacidad */
 @keyframes desvanecer {
-    0%{
+    0% {
         opacity: 1;
     }
-    90%{
+    90% {
         opacity: 1;
     }
-    100%{
+    100% {
         opacity: 0;
     }
 }
 
-.container{
-    background: rgba(255,255,255,0.4);
+/* Estilo para el contenedor principal */
+.container {
+    /* Fondo con transparencia y efecto de desenfoque */
+    background: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(5%);
-    padding-top: 1%;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-bottom: 0%;
+    padding: 1%;
     position: absolute;
     width: 45%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /* Propiedades específicas para navegadores */
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
 }
 
+/* Estilo para el contenedor de texto */
 #container {
     position: relative;
     margin: auto;
@@ -62,18 +73,21 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, 20%);
+    /* Propiedades específicas para navegadores */
     -webkit-transform: translate(-50%, 20%);
     -moz-transform: translate(-50%, 20%);
     -ms-transform: translate(-50%, 20%);
     -o-transform: translate(-50%, 20%);
 }
 
+/* Estilo para los elementos de texto */
 #text1, #text2 {
-	position: absolute;
-	width: 100%;
-	display: inline-block;
-	font-family: 'Raleway', sans-serif;
-	font-size: 80pt;
-	text-align: center;
-	user-select: none;
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 80pt;
+    text-align: center;
+    /* Evita la selección del texto */
+    user-select: none;
 }
