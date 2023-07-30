@@ -1,7 +1,7 @@
 // Función para mostrar un div específico y cambiar la visualización de los enlaces
 function mostrarDiv(nombreDiv) {
     // Obtener todos los elementos con la clase "contenido"
-    var contenidos = document.getElementsByClassName("contenido");
+    var contenidos = document.querySelectorAll(".contenido");
     
     // Ocultar todos los elementos con la clase "visible" para el efecto de desvanecimiento
     for (var i = 0; i < contenidos.length; i++) {

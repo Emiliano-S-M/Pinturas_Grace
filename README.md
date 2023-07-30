@@ -34,7 +34,11 @@ English version
             img (Folder)
                 mpselsvdsfvor3d.png
             svg (Folder)
+                facebook.svg
                 logo.svg
+                mail.svg
+                phone.svg
+                whatsapp.svg
             index.css
             Principales.css
         HTML (Folder)
@@ -47,7 +51,7 @@ English version
 
 In this project, **the main folder is "Pintura Grace"**, which contains three sub-folders: **"CSS"**, **"HTML"**, and **"JS"**. It also contains two files: **"README.md"** and **"index.html"**.
 
-The **"CSS"** folder contains two sub-folders: **"img"** and **"svg"**. The **"img"** folder contains an image named **"mpselsvdsfvor3d.png"**, and the **"svg"** folder contains a file called **"logo.svg"**. Additionally, the **"CSS"** folder contains two CSS files: **"index.css"** and **"Principales.css"**.
+The folder "CSS" contains two subfolders: **img** and "**svg**". The "**img**" folder contains an image named "**mpselsvdsfvor3d.png**", and the "**svg**" folder contains five files named "**facebook.svg**", **logo.svg**, **mail.svg**, **phone.svg**, **whatsapp.svg**. Additionally, the "CSS" folder contains two CSS files: "**index.css**" and "**Principales.css**".
 
 The **"HTML"** folder contains a single file named **"Principal.html"**.
 
@@ -82,7 +86,11 @@ Version en Español
             img (Carpeta)
                 mpselsvdsfvor3d.png
             svg (Carpeta)
+                facebook.svg
                 logo.svg
+                mail.svg
+                phone.svg
+                whatsapp.svg
             index.css
             Principales.css
         HTML (Carpeta)
@@ -95,7 +103,7 @@ Version en Español
 
 En este proyecto, ***la carpeta principal es "Pintura Grace"*** que contiene tres subcarpetas: **"CSS"**, **"HTML"** y **"JS"**. También contiene dos archivos: **"README.md"** e **"index.html"**.
 
-La carpeta **"CSS"** contiene dos subcarpetas: **"img"** y **"svg"**. La carpeta **"img"** contiene una imagen llamada **"mpselsvdsfvor3d.png"**, y la carpeta **"svg"** contiene un archivo llamado **"logo.svg"**. Además, la carpeta **"CSS"** contiene dos archivos CSS: **"index.css"** y **"Principales.css"**.
+La carpeta **"CSS"** contiene dos subcarpetas: **"img"** y **"svg"**. La carpeta **"img"** contiene una imagen llamada **"mpselsvdsfvor3d.png"**, y la carpeta **"svg"** contiene cinco archivos llamados **"facebook.svg"**, **logo.svg**, **mail.svg**, **phone.svg**, **whatsapp.svg**. Además, la carpeta **"CSS"** contiene dos archivos CSS: **"index.css"** y **"Principales.css"**.
 
 La carpeta **"HTML"** contiene un único archivo llamado **"Principal.html"**.
 
