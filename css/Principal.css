@@ -121,15 +121,84 @@ body {
     width: 100%;
     height: 100%;
 }
-
-/* Estilo para el contenido de contacto */
-#contacto {
-    height: 100%;
+.enlaces-sociales{
+    margin-top: 8rem;
+    vertical-align: bottom;
+}
+.contenido-social .enlaces-sociales{
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.contenido-social h2{
+    grid-column: 1/5;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #b46402;
+    font-size: 3rem;
+    border-bottom: 2px solid #b4b4b4;
+    margin: 2rem;
+    padding-bottom: 1rem;
+}
+.contenido-social h4{
+    grid-column: 1/5;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b46402;
+    margin: 1rem;
+}
+
+.contenido-social .enlaces-sociales .whatsapp,
+.contenido-social .enlaces-sociales .phone,
+.contenido-social .enlaces-sociales .fb,
+.contenido-social .enlaces-sociales .mail{
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contenido-social .enlaces-sociales .whatsapp p,
+.contenido-social .enlaces-sociales .phone p,
+.contenido-social .enlaces-sociales .fb p,
+.contenido-social .enlaces-sociales .mail p{
+    color: #b46402;
+    font-size: medium;
+    margin-bottom: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+.contenido-social .phone .nums .num1,
+.contenido-social .phone .nums .num2{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.contenido-social .phone .nums .num1 img,
+.contenido-social .phone .nums .num2 img{
+    width: 11%;
+}
+.contenido-social .whatsapp a img,
+.contenido-social .fb a img{
+    margin: 2rem;
+    width: 40%;
+}
+.contenido-social .mail a img{
+    margin: 2rem;
+    width: 65%;
+}
+.contenido-social .phone .nums .num1 a,
+.contenido-social .phone .nums .num2 a{
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.3rem;
+    color: #b46402;
 }
 
 /* Estilo para el contenido del contacto y ubicaciones */
-.contenido-contacto {
+.contenido-ubicaciones {
     /* Grid container con 2 columnas y altura automática según el contenido */
     width: 100%;
     display: grid;
@@ -138,7 +207,7 @@ body {
 }
 
 /* Estilo para el título del contenido de contacto y ubicaciones */
-.contenido-contacto h2 {
+.contenido-ubicaciones h2 {
     /* Spanning de 2 columnas y centrado */
     grid-column: 1/3;
     text-align: center;
@@ -152,15 +221,15 @@ body {
 }
 
 /* Estilo para los mapas de ubicaciones */
-.contenido-contacto .mapa1,
-.contenido-contacto .mapa2 {
+.contenido-ubicaciones .mapa1,
+.contenido-ubicaciones .mapa2 {
     margin: 0 auto;
     text-align: center;
 }
 
 /* Estilo para los párrafos de los mapas de ubicaciones */
-.contenido-contacto .mapa1 p,
-.contenido-contacto .mapa2 p {
+.contenido-ubicaciones .mapa1 p,
+.contenido-ubicaciones .mapa2 p {
     color: #b46402;
     font-size: medium;
     margin-bottom: 0.5rem;
@@ -169,7 +238,7 @@ body {
 }
 
 /* Estilo para los iframes de los mapas de ubicaciones */
-.contenido-contacto iframe {
+.contenido-ubicaciones iframe {
     width: 20rem;
     height: 20rem;
     /* Bordes redondeados y sombra */
