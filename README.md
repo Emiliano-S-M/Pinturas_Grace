@@ -33,11 +33,16 @@ English version
         CSS (Folder)
             img (Folder)
                 mpselsvdsfvor3d.png
+                Objetos.png
+                Suelo.png
             svg (Folder)
+                calidad.svg
                 facebook.svg
                 logo.svg
                 mail.svg
+                mision.svg
                 phone.svg
+                vision.svg
                 whatsapp.svg
             index.css
             Principales.css
@@ -85,11 +90,16 @@ Version en Español
         CSS (Carpeta)
             img (Carpeta)
                 mpselsvdsfvor3d.png
+                Objetos.png
+                Suelo.png
             svg (Carpeta)
+                calidad.svg
                 facebook.svg
                 logo.svg
                 mail.svg
+                mision.svg
                 phone.svg
+                vision.svg
                 whatsapp.svg
             index.css
             Principales.css
