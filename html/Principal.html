@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pinturas Grace | Inicio</title>
-    <meta name="description" content="Bienvenido a Pinturas Grace, el mejor lugar para encontrar una amplia selección de productos de pintura de alta calidad. Descubre nuestras pinturas decorativas y especializadas para interiores y exteriores. ¡Embellece tus espacios con nuestras opciones de colores y acabados!">
-    <meta name="keywords" content="Pinturas Grace, productos de pintura, pintura decorativa, pintura para interiores, pintura para exteriores">
+    <meta name="description"
+        content="Bienvenido a Pinturas Grace, el mejor lugar para encontrar una amplia selección de productos de pintura de alta calidad. Descubre nuestras pinturas decorativas y especializadas para interiores y exteriores. ¡Embellece tus espacios con nuestras opciones de colores y acabados!">
+    <meta name="keywords"
+        content="Pinturas Grace, productos de pintura, pintura decorativa, pintura para interiores, pintura para exteriores">
     <link rel="stylesheet" href="../css/Principal.css">
 </head>
+
 <body>
     <div class="container">
         <nav class="nav">
@@ -39,7 +43,8 @@
                             </div>
                             <div class="contenido-tarjetas">
                                 <h3>Misión</h3>
-                                <p>Cubrir las necesidades de decoración y protección ambiental de las propiedades de la sociedad.</p>
+                                <p>Cubrir las necesidades de decoración y protección ambiental de las propiedades de la
+                                    sociedad.</p>
                             </div>
                         </div>
                         <div class="card">
@@ -49,7 +54,8 @@
                             </div>
                             <div class="contenido-tarjetas">
                                 <h3>Visión</h3>
-                                <p>Ser líder en el mercado de pinturas y recubrimientos, con presencia a nivel nacional, que se distinga por productos amigables con el medio ambiente.</p>
+                                <p>Ser líder en el mercado de pinturas y recubrimientos, con presencia a nivel nacional,
+                                    que se distinga por productos amigables con el medio ambiente.</p>
                             </div>
                         </div>
                         <div class="card">
@@ -59,19 +65,51 @@
                             </div>
                             <div class="contenido-tarjetas">
                                 <h3>Política de calidad</h3>
-                                <p>Lograr la satisfacción total de los clientes y cubrir con los requisitos acordados en todos los productos que fabricamos a través de la mejora continua aplicada a nuestro sistema de gestión de calidad.</p>
+                                <p>Lograr la satisfacción total de los clientes y cubrir con los requisitos acordados en
+                                    todos los productos que fabricamos a través de la mejora continua aplicada a nuestro
+                                    sistema de gestión de calidad.</p>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
             </div>
             <div id="productos" class="contenido hidden">
                 <p>Productos</p>
                 <!-- Contenido del div "productos" aquí -->
             </div>
+
+
             <div id="colores" class="contenido hidden">
-                <!-- Contenido del div "colores" aquí -->
-                <p>Colores</p>
+                <div class="contenido-colores">
+                    <h2>COLORES</h2>
+                    <div class="mockup">
+                        <div class="selector">
+                            <!-- Organizamos los colores en una lista desplegable -->
+                            <div class="color-picker">
+                                <select class="colorCategory" id="colorCategory" onchange="showColorsByCategory()">
+                                    <option value="Amarillos">Tonos Amarillos</option>
+                                    <option value="Naranjas">Tono Naranjas</option>
+                                    <option value="Rojos">Tonos Rojos</option>
+                                    <option value="Violetas">Tonos Violetas</option>
+                                    <option value="Azules">Tonos Azules</option>
+                                    <option value="Verdes">Tonos Verdes</option>
+                                    <option value="Grises">Tonos Grises</option>
+                                    <option value="Marrones">Tonos Marrones</option>
+                                    <option value="BlancosNegros">Tonos Blancos y Negros</option>
+                                </select>
+                            </div>
+                            <div class="color-list" id="colorList"></div>
+                        </div>
+                        <div class="canvas-container">
+                            <div class="canvas" id="canvas">
+                                <img src="../css/img/Suelo.png" alt="Suelo">
+                                <div class="color"></div>
+                                <img src="../css/img/Objetos.png" alt="Objetos">
+                            </div>
+                            <div id="selectedColorName"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="blog" class="contenido hidden">
                 <!-- Contenido del div "blog" aquí -->
@@ -85,7 +123,8 @@
                     <div class="enlaces-sociales">
                         <div class="whatsapp">
                             <p>Nuestro WhatsApp</p>
-                            <a href="https://api.whatsapp.com/send?phone=+525535535847&text=Hola,%20me%20gustar&iacute;a%20recibir%20mas%20informaci&oacute;n%20acerca%20de%20sus%20productos" target="_blank" rel="noopener">
+                            <a href="https://api.whatsapp.com/send?phone=+525535535847&text=Hola,%20me%20gustar&iacute;a%20recibir%20mas%20informaci&oacute;n%20acerca%20de%20sus%20productos"
+                                target="_blank" rel="noopener">
                                 <img src="../css/svg/whatsapp.svg" alt="WhatsApp">
                             </a>
                         </div>
@@ -125,11 +164,17 @@
                     <h2>Nuestras Ubicaciones</h2>
                     <div class="mapa1">
                         <p>Nuestra Empresa y Oficinas</p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60135.3846962948!2d-99.2404783513672!3d19.607556200000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f72b16ba9ba5%3A0x139a50bda7aea190!2sPinturas%20Grace!5e0!3m2!1ses!2smx!4v1690390778652!5m2!1ses!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de nuestra empresa y oficinas"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60135.3846962948!2d-99.2404783513672!3d19.607556200000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f72b16ba9ba5%3A0x139a50bda7aea190!2sPinturas%20Grace!5e0!3m2!1ses!2smx!4v1690390778652!5m2!1ses!2smx"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            title="Mapa de nuestra empresa y oficinas"></iframe>
                     </div>
                     <div class="mapa2">
                         <p>Nuestra tienda</p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60135.3846962948!2d-99.2404783513672!3d19.607556200000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f5be7fcf15b1%3A0x1dc7c64189de909a!2sPinturas%20Grace%20Tienda%20Tultitl%C3%A1n!5e0!3m2!1ses!2smx!4v1690394754092!5m2!1ses!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de nuestra tienda"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60135.3846962948!2d-99.2404783513672!3d19.607556200000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f5be7fcf15b1%3A0x1dc7c64189de909a!2sPinturas%20Grace%20Tienda%20Tultitl%C3%A1n!5e0!3m2!1ses!2smx!4v1690394754092!5m2!1ses!2smx"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            title="Mapa de nuestra tienda"></iframe>
                     </div>
                 </div>
             </div>
@@ -137,4 +182,5 @@
     </div>
     <script src="../js/Principal.js"></script>
 </body>
+
 </html>
