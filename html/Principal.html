@@ -15,72 +15,93 @@
 <body>
     <div class="container">
         <nav class="nav">
-            <img src="../css/svg/logo.svg" alt="Logo Pinturas Grace">
-            <ul class="menu">
+            <img src="../css/svg/logo.svg" alt="Logo Pinturas Grace" title="Pinturas Grace" class="nav__logo">
+            <ul class="nav__list">
                 <li><a href="#" onclick="mostrarDiv('inicio')">INICIO</a></li>
                 <li><a href="#" onclick="mostrarDiv('nosotros')">NOSOTROS</a></li>
                 <li><a href="#" onclick="mostrarDiv('productos')">PRODUCTOS</a></li>
                 <li><a href="#" onclick="mostrarDiv('colores')">COLORES</a></li>
-                <li><a href="#" onclick="mostrarDiv('blog')">BLOG</a></li>
+                <li><a href="#" onclick="mostrarDiv('tips')">TIPS</a></li>
                 <li><a href="#" onclick="mostrarDiv('contacto')">CONTACTO</a></li>
                 <li><a href="#" onclick="mostrarDiv('ubicaciones')">UBICACIONES</a></li>
             </ul>
         </nav>
 
         <div class="content">
-            <div id="inicio" class="contenido">
-                <!-- Contenido del div "inicio" aquí -->
-                <p>Inicio</p>
+            <div id="inicio" class="contenido inicio">
+                <h2 class="title">INICIO</h2>
+                <img src="../css/svg/logo.svg" alt="Logo de Pinturas Grace" class="inicio__logo">
+                <div class="paragraph__container">
+                    <p class="paragraph">
+                        Descubre un mundo de colores y creatividad con nosotros. Somos el fabricante líder de pinturas
+                        arquitectónicas e industriales, ofreciendo una amplia gama de opciones para tus proyectos. Desde
+                        vívidas pinturas vinílicas hasta resistentes esmaltes epóxicos, nuestros productos son la
+                        elección perfecta para dar vida a tus ideas.
+                    </p>
+                    <p class="paragraph">
+                        En cada pincelada, damos vida a tus espacios, transformando hogares, oficinas e industrias en
+                        obras de arte. Nuestro compromiso con la calidad y la innovación nos ha convertido en el aliado
+                        confiable de arquitectos, constructores y artistas en todo el país.
+                    </p>
+                    <p class="paragraph">
+                        Déjate inspirar por nuestros colores que perduran en el tiempo, reflejando tu estilo y
+                        personalidad en cada rincón. Con pasión por la pintura y un enfoque en la excelencia, llevamos
+                        la magia del color a tus proyectos.
+                    </p>
+                    <p class="paragraph">
+                        Bienvenido a la revolución del color. Bienvenido a [Nombre de tu empresa]. Donde la creatividad
+                        y la confianza se encuentran
+                    </p>
+                </div>
             </div>
-            <div id="nosotros" class="contenido hidden">  
-                <div class="contenido-nosotros">
-                    <h2>NOSOTROS</h2>
-                    <div class="tarjetas">
-                        <div class="card">
-                            <div class="pre-hover">
-                                <p>MISION</p>
-                                <img src="../css/svg/mision.svg" alt="mision_svg">
-                            </div>
-                            <div class="contenido-tarjetas">
-                                <h3>Misión</h3>
-                                <p>Cubrir las necesidades de decoración y protección ambiental de las propiedades de la
-                                    sociedad.</p>
-                            </div>
+            <div id="nosotros" class="contenido hidden">
+                <h2 class="title">NOSOTROS</h2>
+                <div class="nosotros__tarjetas__container">
+                    <div class="nosotros__card">
+                        <div class="card__pre-hover">
+                            <h3 class="card__title">MISION</h3>
+                            <img src="../css/svg/mision.svg" alt="mision_svg" class="card__pre-hover__img">
                         </div>
-                        <div class="card">
-                            <div class="pre-hover">
-                                <p>VISION</p>
-                                <img src="../css/svg/vision.svg" alt="vision_svg">
-                            </div>
-                            <div class="contenido-tarjetas">
-                                <h3>Visión</h3>
-                                <p>Ser líder en el mercado de pinturas y recubrimientos, con presencia a nivel nacional,
-                                    que se distinga por productos amigables con el medio ambiente.</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="pre-hover">
-                                <p>POLITICA DE CALIDAD</p>
-                                <img src="../css/svg/calidad.svg" alt="calidad_svg">
-                            </div>
-                            <div class="contenido-tarjetas">
-                                <h3>Política de calidad</h3>
-                                <p>Lograr la satisfacción total de los clientes y cubrir con los requisitos acordados en
-                                    todos los productos que fabricamos a través de la mejora continua aplicada a nuestro
-                                    sistema de gestión de calidad.</p>
-                            </div>
+                        <div class="card__content">
+                            <h3 class="card__title card__title-shadow">MISION</h3>
+                            <p class="card__paragraph">Cubrir las necesidades de decoración y protección ambiental de
+                                las propiedades de la
+                                sociedad.</p>
                         </div>
                     </div>
-                </div>            </div>
-            <div id="productos" class="contenido hidden">
-                <p>Productos</p>
-                <!-- Contenido del div "productos" aquí -->
+                    <div class="nosotros__card">
+                        <div class="card__pre-hover">
+                            <h3 class="card__title">VISION</h3>
+                            <img src="../css/svg/vision.svg" alt="vision_svg" class="card__pre-hover__img">
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title card__title-shadow">VISION</h3>
+                            <p class="card__paragraph">Ser líder en el mercado de pinturas y recubrimientos, con
+                                presencia a nivel nacional,
+                                que se distinga por productos amigables con el medio ambiente.</p>
+                        </div>
+                    </div>
+                    <div class="nosotros__card">
+                        <div class="card__pre-hover">
+                            <h3 class="card__title">POLITICA DE CALIDAD</h3>
+                            <img src="../css/svg/calidad.svg" alt="calidad_svg" class="card__pre-hover__img">
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title card__title-shadow">POLITICA DE CALIDAD</h3>
+                            <p class="card__paragraph">Lograr la satisfacción total de los clientes y cubrir con los
+                                requisitos acordados en
+                                todos los productos que fabricamos a través de la mejora continua aplicada a nuestro
+                                sistema de gestión de calidad.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
+            <div id="productos" class="contenido hidden">
+                <h2 class="title">PRODUCTOS</h2>
+            </div>
             <div id="colores" class="contenido hidden">
+                <h2 class="title">COLORES</h2>
                 <div class="contenido-colores">
-                    <h2>COLORES</h2>
                     <div class="mockup">
                         <div class="selector">
                             <div class="color-picker">
@@ -109,14 +130,50 @@
                     </div>
                 </div>
             </div>
-            <div id="blog" class="contenido hidden">
-                <!-- Contenido del div "blog" aquí -->
-                <p>Blog</p>
+            <div id="tips" class="contenido hidden">
+                <h2 class="title">TIPS DE COLOR</h2>
+                <div class="tips__container">
+                    <div class="paragraph__container">
+                        <p class="paragraph">Luz y luminosidad: Si deseas que una habitación se vea más luminosa, opta por
+                            colores claros en las paredes y techos.
+                            Los colores claros reflejan mejor la luz y hacen que el espacio parezca más amplio y aireado.</p>
+                        <p class="paragraph">Contraste y acento: Utiliza colores contrastantes para destacar elementos
+                            arquitectónicos, como molduras, puertas o ventanas.
+                            Un color más oscuro o brillante en estos detalles puede realzar el diseño de la habitación.</p>
+                        <p class="paragraph">Sensación acogedora: Colores cálidos como tonos tierra (marrones, terracotas,
+                            etc.) y tonos amarillos pueden crear un ambiente
+                            acogedor y relajante en espacios como el salón o el dormitorio.</p>
+                        <p class="paragraph">Amplitud en espacios pequeños: Si deseas que una habitación pequeña se vea más
+                            grande, utiliza colores claros en todas las
+                            paredes y techos. Esto ayudará a que el espacio se sienta más expansivo.</p>
+                        <p class="paragraph">Neutralidad y versatilidad: Los colores neutros como el blanco, beige, gris
+                            claro, etc., son versátiles y fáciles de combinar
+                            con diferentes estilos de decoración.</p>
+                        <p class="paragraph">Colores inspiradores: Considera el uso de colores inspiradores en espacios
+                            creativos o áreas de trabajo, como el azul para
+                            fomentar la concentración o el verde para la relajación.</p>
+                        <p class="paragraph">Armonía de colores: Utiliza la rueda de colores para encontrar combinaciones
+                            armoniosas. Los colores análogos
+                            (los cercanos en la rueda) crean una sensación de armonía y cohesión en la decoración.</p>
+                        <p class="paragraph">Integración de espacios: Si tienes un espacio de concepto abierto o áreas
+                            conectadas visualmente, elige una paleta de colores
+                            coherente para mantener la continuidad entre los espacios.</p>
+                        <p class="paragraph">Efecto de techo más alto: Si deseas que el techo parezca más alto, pinta las
+                            paredes con un color más claro que el del techo.
+                            Esto dará la ilusión de mayor altura.</p>
+                        <p class="paragraph">Experimenta con muestras: Antes de pintar toda la habitación, prueba los
+                            colores que te gusten en pequeñas áreas o muestras
+                            para ver cómo se ven a diferentes horas del día y bajo diferentes condiciones de luz.</p>
+                    </div>
+                    <div class="img__container">
+                        <img src="../css/img/house-colors.jpg" alt="Casas de colores" title="Casas de colores"
+                            class="tips__img">
+                    </div>
+                </div>
             </div>
             <div id="contacto" class="contenido hidden">
-                <!-- Contenido del div "contacto" aquí-->
+                <h2 class="title">Nuestras redes sociales y contacto</h2>
                 <div class="contenido-social">
-                    <h2>Nuestras redes sociales y contacto</h2>
                     <p>Solo da clic en cualquier enlace</p>
                     <div class="enlaces-sociales">
                         <div class="whatsapp">
@@ -157,22 +214,23 @@
                 </div>
             </div>
             <div id="ubicaciones" class="contenido hidden">
-                <!-- Contenido del div "ubicaciones" aquí -->
+                <h2 class="title">Nuestras Ubicaciones</h2>
                 <div class="contenido-ubicaciones">
-                    <h2>Nuestras Ubicaciones</h2>
-                    <div class="mapa1">
-                        <p>Nuestra Empresa y Oficinas</p>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60135.3846962948!2d-99.2404783513672!3d19.607556200000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f72b16ba9ba5%3A0x139a50bda7aea190!2sPinturas%20Grace!5e0!3m2!1ses!2smx!4v1690390778652!5m2!1ses!2smx"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                            title="Mapa de nuestra empresa y oficinas"></iframe>
-                    </div>
-                    <div class="mapa2">
-                        <p>Nuestra tienda</p>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60135.3846962948!2d-99.2404783513672!3d19.607556200000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f5be7fcf15b1%3A0x1dc7c64189de909a!2sPinturas%20Grace%20Tienda%20Tultitl%C3%A1n!5e0!3m2!1ses!2smx!4v1690394754092!5m2!1ses!2smx"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                            title="Mapa de nuestra tienda"></iframe>
+                    <div class="mapas">
+                        <div class="mapa1">
+                            <p>Nuestra Empresa y Oficinas</p>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60135.3846962948!2d-99.2404783513672!3d19.607556200000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f72b16ba9ba5%3A0x139a50bda7aea190!2sPinturas%20Grace!5e0!3m2!1ses!2smx!4v1690390778652!5m2!1ses!2smx"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                title="Mapa de nuestra empresa y oficinas"></iframe>
+                        </div>
+                        <div class="mapa2">
+                            <p>Nuestra tienda</p>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60135.3846962948!2d-99.2404783513672!3d19.607556200000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f5be7fcf15b1%3A0x1dc7c64189de909a!2sPinturas%20Grace%20Tienda%20Tultitl%C3%A1n!5e0!3m2!1ses!2smx!4v1690394754092!5m2!1ses!2smx"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                title="Mapa de nuestra tienda"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>

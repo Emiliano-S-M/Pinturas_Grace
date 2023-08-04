@@ -27,11 +27,11 @@ function mostrarDiv(nombreDiv) {
     }, 500); // Esperar 0.5 segundos antes de cambiar la visualización
 
     // Obtener todos los elementos de la lista de enlaces
-    var listaLinks = document.querySelectorAll(".menu li a");
+    var listaLinks = document.querySelectorAll(".nav__list li a");
     
     // Cambiar las clases de los enlaces para activar/inactivar según el div mostrado
     listaLinks.forEach(function(link) {
-        if (link.textContent.toUpperCase() === nombreDiv.toUpperCase()) {
+        if (link.textContent.toLowerCase() === nombreDiv.toLowerCase()) {
             link.classList.add("active-link");
             link.classList.remove("inactive-link");
         } else {
@@ -43,6 +43,23 @@ function mostrarDiv(nombreDiv) {
     // Guardar el ID del div en el almacenamiento local para recordar última posición
     localStorage.setItem("ultimaPosicion", nombreDiv);
 }
+
+
+
+
+// Evento para guardar la última posición al cerrar la página
+window.addEventListener("beforeunload", function() {
+    // Obtener el div actualmente mostrado
+    var divActual = document.querySelector(".contenido[style*='display: block']");
+    if (divActual) {
+        // Obtener el ID del div actual
+        var nombreDivActual = divActual.id;
+        // Guardar el ID del div actual en el almacenamiento local
+        localStorage.setItem("ultimaPosicion", nombreDivActual);
+    }
+});
+
+
 
 // Mostrar el div almacenado en el almacenamiento local al cargar la página
 var ultimaPosicion = localStorage.getItem("ultimaPosicion");
@@ -172,10 +189,95 @@ const ralColors = {
         { name: "RAL 5026 Azul noche perlado", hex: "#0F3052" },
     ],
     Verdes: [
-        // Añadir más colores verdes aquí...
+        { name: "RAL 6000 Verde patina", hex: "#3C7460" },
+        { name: "RAL 6001 Verde esmeralda", hex: "#366735" },
+        { name: "RAL 6002 Verde hoja", hex: "#325928" },
+        { name: "RAL 6003 Verde oliva", hex: "#50533C" },
+        { name: "RAL 6004 Verde azulado", hex: "#024442" },
+        { name: "RAL 6005 Verde musgo", hex: "#114232" },
+        { name: "RAL 6006 Oliva grisáceo", hex: "#3C392E" },
+        { name: "RAL 6007 Verde botella", hex: "#2C3222" },
+        { name: "RAL 6008 Verde parduzco", hex: "#36342A" },
+        { name: "RAL 6009 Verde abeto", hex: "#27352A" },
+        { name: "RAL 6010 Verde hierba", hex: "#4D6F39" },
+        { name: "RAL 6011 Verde reseda", hex: "#6B7C59" },
+        { name: "RAL 6012 Verde negruzco", hex: "#2F3D3A" },
+        { name: "RAL 6013 Verde caña", hex: "#7C765A" },
+        { name: "RAL 6014 Amarillo oliva", hex: "#474135" },
+        { name: "RAL 6015 Oliva negruzco", hex: "#3D3D36" },
+        { name: "RAL 6016 Verde turquesa", hex: "#00694C" },
+        { name: "RAL 6017 Verde mayo", hex: "#587F40" },
+        { name: "RAL 6018 Verde amarillento", hex: "#60993B" },
+        { name: "RAL 6019 Verde blanquecino", hex: "#B9CEAC" },
+        { name: "RAL 6020 Verde cromo", hex: "#37422F" },
+        { name: "RAL 6021 Verde pálido", hex: "#8A9977" },
+        { name: "RAL 6022 Oliva parduzco", hex: "#3A3327" },
+        { name: "RAL 6024 Verde tráfico", hex: "#008351" },
+        { name: "RAL 6025 Verde helecho", hex: "#5E6E3B" },
+        { name: "RAL 6026 Verde ópalo", hex: "#005F4E" },
+        { name: "RAL 6027 Verde luminoso", hex: "#7EBAB5" },
+        { name: "RAL 6028 Verde pino", hex: "#315442" },
+        { name: "RAL 6029 Verde menta", hex: "#006F3D" },
+        { name: "RAL 6032 Verde señales", hex: "#237F52" },
+        { name: "RAL 6033 Turquesa menta", hex: "#45877F" },
+        { name: "RAL 6034 Turquesa pastel", hex: "#7AADAC" },
+        { name: "RAL 6035 Verde perlado", hex: "#194D25" },
+        { name: "RAL 6036 Verde ópalo perlado", hex: "#04574B" },
+        { name: "RAL 6037 Verde puro", hex: "#008B29" },
+        { name: "RAL 6038 Verde brillante", hex: "#00B51B" },
+        { name: "RAL 6039 Verde fibra", hex: "#B3C43E" },
     ],
     Grises: [
-        // Añadir más colores grises aquí...
+        { name: "RAL 7000 Gris ardilla", hex: "#7A888E" },
+        { name: "RAL 7001 Gris plata", hex: "#8C979C" },
+        { name: "RAL 7002 Gris oliva", hex: "#817863" },
+        { name: "RAL 7003 Gris musgo", hex: "#797669" },
+        { name: "RAL 7004 Gris señales", hex: "#9A9B9B" },
+        { name: "RAL 7005 Gris ratón", hex: "#6B6E6B" },
+        { name: "RAL 7006 Gris beige", hex: "#766A5E" },
+        { name: "RAL 7008 Gris caqui", hex: "#745F3D" },
+        { name: "RAL 7009 Gris verdoso", hex: "#5D6058" },
+        { name: "RAL 7010 Gris lona", hex: "#585C56" },
+        { name: "RAL 7011 Gris hierro", hex: "#52595D" },
+        { name: "RAL 7012 Gris basalto", hex: "#575D5E" },
+        { name: "RAL 7013 Gris parduzco", hex: "#575044" },
+        { name: "RAL 7015 Gris pizarra", hex: "#4F5358" },
+        { name: "RAL 7016 Gris antracita", hex: "#383E42" },
+        { name: "RAL 7021 Gris negruzco", hex: "#2F3234" },
+        { name: "RAL 7022 Gris sombra", hex: "#4C4A44" },
+        { name: "RAL 7023 Gris hormigón", hex: "#808076" },
+        { name: "RAL 7024 Gris grafita", hex: "#45494E" },
+        { name: "RAL 7026 Gris granito", hex: "#374345" },
+        { name: "RAL 7030 Gris piedra", hex: "#928E85" },
+        { name: "RAL 7031 Gris azulado", hex: "#5B686D" },
+        { name: "RAL 7032 Gris guijarro", hex: "#B5B0A1" },
+        { name: "RAL 7033 Gris cemento", hex: "#7F8274" },
+        { name: "RAL 7034 Gris amarillento", hex: "#92886F" },
+        { name: "RAL 7035 Gris luminoso", hex: "#C5C7C4" },
+        { name: "RAL 7036 Gris platino", hex: "#979392" },
+        { name: "RAL 7037 Gris polvo", hex: "#7A7B7A" },
+        { name: "RAL 7038 Gris ágata", hex: "#B0B0A9" },
+        { name: "RAL 7039 Gris cuarzo", hex: "#6B665E" },
+        { name: "RAL 7040 Gris ventana", hex: "#989EA1" },
+        { name: "RAL 7042 Gris tráfico A", hex: "#8E9291" },
+        { name: "RAL 7043 Gris tráfico B", hex: "#4F5250" },
+        { name: "RAL 7044 Gris seda", hex: "#B7B3A8" },
+        { name: "RAL 7045 Gris tele 1", hex: "#8D9295" },
+        { name: "RAL 7046 Gris tele 2", hex: "#7E868A" },
+        { name: "RAL 7047 Gris tele 4", hex: "#C8C8C7" },
+        { name: "RAL 7048 Gris musgo perlado", hex: "#817B73" },
+
+
+        { name: "RAL 7038 Gris ágata", hex: "#B0B0A9" },
+        { name: "RAL 7039 Gris cuarzo", hex: "#6B665E" },
+        { name: "RAL 7040 Gris ventana", hex: "#989EA1" },
+        { name: "RAL 7042 Gris tráfico A", hex: "#8E9291" },
+        { name: "RAL 7043 Gris tráfico B", hex: "#4F5250" },
+        { name: "RAL 7044 Gris seda", hex: "#B7B3A8" },
+        { name: "RAL 7045 Gris tele 1", hex: "#8D9295" },
+        { name: "RAL 7046 Gris tele 2", hex: "#7E868A" },
+        { name: "RAL 7047 Gris tele 4", hex: "#C8C8C7" },
+        { name: "RAL 7048 Gris musgo perlado", hex: "#817B73" },
     ],
     Marrones: [
         { name: "RAL 8000 Pardo verdoso", hex: "#89693F" },
@@ -260,15 +362,3 @@ colorizeImage(colorInicial);
 showSelectedColorName(ralColors.Amarillos[0].name); // Mostrar el nombre del color inicial al cargar la página
 showColorsByCategory(); // Mostrar los colores de la categoría Amarillos al cargar la página
 
-
-// Evento para guardar la última posición al cerrar la página
-window.addEventListener("beforeunload", function() {
-    // Obtener el div actualmente mostrado
-    var divActual = document.querySelector(".contenido[style*='display: block']");
-    if (divActual) {
-        // Obtener el ID del div actual
-        var nombreDivActual = divActual.id;
-        // Guardar el ID del div actual en el almacenamiento local
-        localStorage.setItem("ultimaPosicion", nombreDivActual);
-    }
-});
